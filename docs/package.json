@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gitbook build && mv _book docs"
+    "build": "book sm && gitbook build && rm -rf docs && cp -r _book docs"
   },
   "repository": {
     "type": "git",
