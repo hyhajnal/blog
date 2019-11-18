@@ -1,0 +1,7 @@
+{
+    "title": "前端",
+    "outputfile": "SUMMARY.md",
+    "catalog": "all",
+    "ignores": ["_book"],
+    "sortedBy": "-"
+}
