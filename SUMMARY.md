@@ -21,6 +21,7 @@
 - 小程序相关
   * [小程序性能以及原理](小程序相关/小程序性能以及原理.md)
 - 工具
+  * [charles设置代理](工具/charles设置代理.md)
   * [git merge 和 git rebase](工具/git merge 和 git rebase.md)
   * [git 常用命令](工具/git 常用命令.md)
   * [npm常用命令](工具/npm常用命令.md)
