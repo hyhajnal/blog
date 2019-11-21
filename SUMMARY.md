@@ -3,21 +3,31 @@
 - 基础
   * [代码简洁之道](1-基础/代码简洁之道.md)
   * [函数柯里化](1-基础/函数柯里化.md)
+  * [去重](1-基础/去重.md)
+  * [日期](1-基础/日期.md)
+  * [类型检测](1-基础/类型检测.md)
   * [编码](1-基础/编码.md)
+  * [颜色的转换](1-基础/颜色的转换.md)
 - css相关
   * [css动画](css相关/css动画.md)
+  * [Rem](css相关/rem.md)
   * [多行省略展开收起](css相关/多行省略展开收起.md)
-- git相关
-  * [git merge 和 git rebase](git相关/git merge 和 git rebase.md)
-  * [常用命令](git相关/常用命令.md)
+- Vue React
+  * [vue 引入 sass 变量](Vue & React/vue 引入 sass 变量.md)
 - 填坑
   * [vue小程序互转](填坑/vue小程序互转.md)
   * [前端监控](填坑/前端监控.md)
   * [可视化搭建](填坑/可视化搭建.md)
 - 小程序相关
   * [小程序性能以及原理](小程序相关/小程序性能以及原理.md)
+- 工具
+  * [git merge 和 git rebase](工具/git merge 和 git rebase.md)
+  * [git 常用命令](工具/git 常用命令.md)
+  * [npm常用命令](工具/npm常用命令.md)
+  * [端口冲突](工具/端口冲突.md)
 - 开发调试
   * [chrome调试面板](开发调试/chrome调试面板.md)
 - 网络&性能
   * [URL链接过长](网络&性能/URL链接过长.md)
   * [资源加载顺序以及预加载](网络&性能/资源加载顺序以及预加载.md)
+* [Link](link.md)
