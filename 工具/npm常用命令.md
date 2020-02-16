@@ -54,19 +54,30 @@ sudo npm cache clean -f
 
 #设置npm源
 npm config set registry https://registry.npm.taobao.org
+或者 nrm add taobao https://registry.npm.taobao.org
+```
 
-nrm add mogu http://npm.f2e.mogujie.org/
+
+
+#### npm  发包
+
+npm 版本号管理   X.Y.Z。不要手动修改package.json的内容，改用命令：
+
+- 如果只是修复bug，需要更新Z位。
+- 如果是新增了功能，但是向下兼容，需要更新Y位。
+- 如果有大变动，向下不兼容，需要更新X位。
+
+```bash
+npm version patch # 升级修订号，例如：1.0.0 -> 1.0.1
+npm version minor # 升级次版本号，例如：1.0.1 -> 1.1.0
+npm version major # 升级主版本号，例如：1.1.1 -> 2.0.0
 ```
 
 
 
 ### scripts
 
-* prepublish
-
-```
-prepublish这个钩子不仅会在npm publish命令之前运行，还会在npm install（不带任何参数）命令之前运行。这种行为很容易让用户感到困惑，所以 npm 4 引入了一个新的钩子prepare，行为等同于prepublish，而从 npm 5 开始，prepublish将只在npm publish命令之前运行。
-```
+`prepare`   在   `npm publish`  之前执行，可用于构建
 
 
 
@@ -77,11 +88,13 @@ prepublish这个钩子不仅会在npm publish命令之前运行，还会在npm i
 
 
 
-##### npm 版本号管理   X.Y.Z
+#### yarn 优势 ?
 
-- 如果只是修复bug，需要更新Z位。
-- 如果是新增了功能，但是向下兼容，需要更新Y位。
-- 如果有大变动，向下不兼容，需要更新X位。
+Facebook发布的新一代包管理工具：快、可靠、安全，为了弥补npm的不足（不过 npm 5 以后功能提升不少）
+
+* 速度快：并行安装包、支持离线安装
+* 默认依赖锁定 yarn.lock（npm也有shrinkwrap）
+* 命令语义化，输出简洁
 
 
 
@@ -100,4 +113,4 @@ export NVM_DIR="$HOME/.nvm"
 $ source ~/.bash_profile
 ```
 
-<img src="../assets/image-20181210185352335.png" alt="image-20181210185352335" style="zoom:50%;" />
+<img src="../assets/image-20181210185352335.png" alt="image-20181210185352335" style="zoom: 25%;" />
