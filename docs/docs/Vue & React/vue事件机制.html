@@ -1,0 +1,999 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>vue事件机制 · 前端</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vue响应式原理.html" />
+    
+    
+    <link rel="prev" href="vue 引入 sass 变量.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1-基础/Promise.html">
+            
+                <a href="../1-基础/Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1-基础/代码简洁之道.html">
+            
+                <a href="../1-基础/代码简洁之道.html">
+            
+                    
+                    代码简洁之道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1-基础/去重.html">
+            
+                <a href="../1-基础/去重.html">
+            
+                    
+                    去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1-基础/日期.html">
+            
+                <a href="../1-基础/日期.html">
+            
+                    
+                    日期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../1-基础/类型检测.html">
+            
+                <a href="../1-基础/类型检测.html">
+            
+                    
+                    类型检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../1-基础/颜色的转换.html">
+            
+                <a href="../1-基础/颜色的转换.html">
+            
+                    
+                    颜色的转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    css相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../css相关/css常用.html">
+            
+                <a href="../css相关/css常用.html">
+            
+                    
+                    css常用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../css相关/rem.html">
+            
+                <a href="../css相关/rem.html">
+            
+                    
+                    Rem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../css相关/动效.html">
+            
+                <a href="../css相关/动效.html">
+            
+                    
+                    动效
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../css相关/多行省略展开收起.html">
+            
+                <a href="../css相关/多行省略展开收起.html">
+            
+                    
+                    多行省略展开收起
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Node
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../node/Nodejs 线程和锁.html">
+            
+                <a href="../node/Nodejs 线程和锁.html">
+            
+                    
+                    Nodejs 线程和锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../node/node异步流程控制.html">
+            
+                <a href="../node/node异步流程控制.html">
+            
+                    
+                    node异步流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Vue React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="immer.html">
+            
+                <a href="immer.html">
+            
+                    
+                    Immer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="vue 引入 sass 变量.html">
+            
+                <a href="vue 引入 sass 变量.html">
+            
+                    
+                    vue 引入 sass 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="vue事件机制.html">
+            
+                <a href="vue事件机制.html">
+            
+                    
+                    vue事件机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="vue响应式原理.html">
+            
+                <a href="vue响应式原理.html">
+            
+                    
+                    vue响应式原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    填坑
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../填坑/vue小程序互转.html">
+            
+                <a href="../填坑/vue小程序互转.html">
+            
+                    
+                    vue小程序互转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../填坑/前端监控.html">
+            
+                <a href="../填坑/前端监控.html">
+            
+                    
+                    前端监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../填坑/可视化搭建.html">
+            
+                <a href="../填坑/可视化搭建.html">
+            
+                    
+                    可视化搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../填坑/移动端场景.html">
+            
+                <a href="../填坑/移动端场景.html">
+            
+                    
+                    移动端场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    小程序相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../小程序相关/小程序性能以及原理.html">
+            
+                <a href="../小程序相关/小程序性能以及原理.html">
+            
+                    
+                    小程序性能以及原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../工具/charles设置代理.html">
+            
+                <a href="../工具/charles设置代理.html">
+            
+                    
+                    charles设置代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../工具/crontab定时任务.html">
+            
+                <a href="../工具/crontab定时任务.html">
+            
+                    
+                    crontab定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../工具/git 常用命令.html">
+            
+                <a href="../工具/git 常用命令.html">
+            
+                    
+                    git 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../工具/mac相关.html">
+            
+                <a href="../工具/mac相关.html">
+            
+                    
+                    mac相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../工具/mysql.html">
+            
+                <a href="../工具/mysql.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../工具/npm常用命令.html">
+            
+                <a href="../工具/npm常用命令.html">
+            
+                    
+                    npm常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../工具/Typescript.html">
+            
+                <a href="../工具/Typescript.html">
+            
+                    
+                    Typescript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../工具/端口冲突.html">
+            
+                <a href="../工具/端口冲突.html">
+            
+                    
+                    端口冲突
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    网络&性能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../网络&性能/URL链接过长.html">
+            
+                <a href="../网络&性能/URL链接过长.html">
+            
+                    
+                    URL链接过长
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../网络&性能/当说到性能和渲染.html">
+            
+                <a href="../网络&性能/当说到性能和渲染.html">
+            
+                    
+                    当说到性能和渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../网络&性能/网络安全.html">
+            
+                <a href="../网络&性能/网络安全.html">
+            
+                    
+                    网络安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../网络&性能/资源加载顺序以及预加载.html">
+            
+                <a href="../网络&性能/资源加载顺序以及预加载.html">
+            
+                    
+                    资源加载顺序以及预加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../网络&性能/静态资源版本更新与缓存.html">
+            
+                <a href="../网络&性能/静态资源版本更新与缓存.html">
+            
+                    
+                    静态资源版本更新与缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    随笔
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../随笔/春招回忆录.html">
+            
+                <a href="../随笔/春招回忆录.html">
+            
+                    
+                    春招回忆录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../随笔/杭州 NodeParty 第五期.html">
+            
+                <a href="../随笔/杭州 NodeParty 第五期.html">
+            
+                    
+                    杭州 NodeParty 第五期
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >vue事件机制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="vue-&#x4E8B;&#x4EF6;&#x673A;&#x5236;">vue &#x4E8B;&#x4EF6;&#x673A;&#x5236;</h2>
+<h4 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">initEvents</span> (<span class="hljs-params">vm: Component</span>) </span>{
+  vm._events = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>)
+  vm._hasHookEvent = <span class="hljs-literal">false</span>
+  <span class="hljs-comment">// init parent attached events</span>
+  <span class="hljs-keyword">const</span> listeners = vm.$options._parentListeners
+  <span class="hljs-keyword">if</span> (listeners) {
+    updateComponentListeners(vm, listeners)
+  }
+}
+
+<span class="hljs-keyword">let</span> target: Component
+</code></pre>
+<h4 id="emit">$ emit</h4>
+<pre><code class="lang-js">Vue.prototype.$emit = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event: string</span>): <span class="hljs-title">Component</span> </span>{
+    <span class="hljs-keyword">const</span> vm: Component = <span class="hljs-keyword">this</span>
+    <span class="hljs-keyword">let</span> cbs = vm._events[event]
+    <span class="hljs-keyword">if</span> (cbs) {
+      cbs = cbs.length &gt; <span class="hljs-number">1</span> ? toArray(cbs) : cbs
+      <span class="hljs-keyword">const</span> args = toArray(<span class="hljs-built_in">arguments</span>, <span class="hljs-number">1</span>)
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>, l = cbs.length; i &lt; l; i++) {
+        <span class="hljs-keyword">try</span> {
+          cbs[i].apply(vm, args)
+        } <span class="hljs-keyword">catch</span> (e) {
+          handleError(e, vm, <span class="hljs-string">`event handler for &quot;<span class="hljs-subst">${event}</span>&quot;`</span>)
+        }
+      }
+    }
+    <span class="hljs-keyword">return</span> vm
+  }
+</code></pre>
+<h4 id="on">$ on</h4>
+<pre><code class="lang-js">Vue.prototype.$on = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event: string | Array&lt;string&gt;, fn: Function</span>): <span class="hljs-title">Component</span> </span>{
+    <span class="hljs-keyword">const</span> vm: Component = <span class="hljs-keyword">this</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(event)) {
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>, l = event.length; i &lt; l; i++) {
+        <span class="hljs-keyword">this</span>.$on(event[i], fn)
+      }
+    } <span class="hljs-keyword">else</span> {
+      (vm._events[event] || (vm._events[event] = [])).push(fn)
+      <span class="hljs-comment">// optimize hook:event cost by using a boolean flag marked at registration</span>
+      <span class="hljs-comment">// instead of a hash lookup</span>
+      <span class="hljs-keyword">if</span> (hookRE.test(event)) {
+        vm._hasHookEvent = <span class="hljs-literal">true</span>
+      }
+    }
+    <span class="hljs-keyword">return</span> vm
+  }
+</code></pre>
+<h4 id="once">$ once</h4>
+<pre><code class="lang-js">Vue.prototype.$once = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event: string, fn: Function</span>): <span class="hljs-title">Component</span> </span>{
+    <span class="hljs-keyword">const</span> vm: Component = <span class="hljs-keyword">this</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">on</span> (<span class="hljs-params"></span>) </span>{
+      vm.$off(event, on)
+      fn.apply(vm, <span class="hljs-built_in">arguments</span>)
+    }
+    on.fn = fn
+    vm.$on(event, on)
+    <span class="hljs-keyword">return</span> vm
+  }
+</code></pre>
+<h4 id="off">$ off</h4>
+<pre><code class="lang-js">Vue.prototype.$off = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event?: string | Array&lt;string&gt;, fn?: Function</span>): <span class="hljs-title">Component</span> </span>{
+    <span class="hljs-keyword">const</span> vm: Component = <span class="hljs-keyword">this</span>
+    <span class="hljs-comment">// all</span>
+    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">arguments</span>.length) {
+      vm._events = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>)
+      <span class="hljs-keyword">return</span> vm
+    }
+    <span class="hljs-comment">// array of events</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(event)) {
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>, l = event.length; i &lt; l; i++) {
+        <span class="hljs-keyword">this</span>.$off(event[i], fn)
+      }
+      <span class="hljs-keyword">return</span> vm
+    }
+    <span class="hljs-comment">// specific event</span>
+    <span class="hljs-keyword">const</span> cbs = vm._events[event]
+    <span class="hljs-keyword">if</span> (!cbs) {
+      <span class="hljs-keyword">return</span> vm
+    }
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">arguments</span>.length === <span class="hljs-number">1</span>) {
+      vm._events[event] = <span class="hljs-literal">null</span>
+      <span class="hljs-keyword">return</span> vm
+    }
+    <span class="hljs-keyword">if</span> (fn) {
+      <span class="hljs-comment">// specific handler</span>
+      <span class="hljs-keyword">let</span> cb
+      <span class="hljs-keyword">let</span> i = cbs.length
+      <span class="hljs-keyword">while</span> (i--) {
+        cb = cbs[i]
+        <span class="hljs-keyword">if</span> (cb === fn || cb.fn === fn) {
+          cbs.splice(i, <span class="hljs-number">1</span>)
+          <span class="hljs-keyword">break</span>
+        }
+      }
+    }
+    <span class="hljs-keyword">return</span> vm
+  }
+</code></pre>
+<h4 id="callhock">callhock</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callHook</span> (<span class="hljs-params">vm: Component, hook: string</span>) </span>{
+  <span class="hljs-keyword">const</span> handlers = vm.$options[hook]
+  <span class="hljs-keyword">if</span> (handlers) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>, j = handlers.length; i &lt; j; i++) {
+      <span class="hljs-keyword">try</span> {
+        handlers[i].call(vm)
+      } <span class="hljs-keyword">catch</span> (e) {
+        handleError(e, vm, <span class="hljs-string">`<span class="hljs-subst">${hook}</span> hook`</span>)
+      }
+    }
+  }
+  <span class="hljs-keyword">if</span> (vm._hasHookEvent) {
+    vm.$emit(<span class="hljs-string">&apos;hook:&apos;</span> + hook)
+  }
+}
+</code></pre>
+<pre><code class="lang-js">Vue.prototype._update = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">vnode, hydrating</span>) </span>{
+<span class="hljs-number">2513</span>        <span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">this</span>;
+<span class="hljs-number">2514</span>        <span class="hljs-keyword">if</span> (vm._isMounted) {
+<span class="hljs-number">2515</span>          callHook(vm, <span class="hljs-string">&apos;beforeUpdate&apos;</span>);
+<span class="hljs-number">2516</span>        }
+<span class="hljs-number">2517</span>        <span class="hljs-keyword">var</span> prevEl = vm.$el;
+&#x2026;    
+<span class="hljs-number">2564</span>          <span class="hljs-keyword">return</span>
+<span class="hljs-number">2565</span>        }
+<span class="hljs-number">2566</span>        callHook(vm, <span class="hljs-string">&apos;beforeDestroy&apos;</span>);
+<span class="hljs-number">2567</span>        vm._isBeingDestroyed = <span class="hljs-literal">true</span>;
+<span class="hljs-number">2568</span>        <span class="hljs-comment">// remove self from parent</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vue 引入 sass 变量.html" class="navigation navigation-prev " aria-label="Previous page: vue 引入 sass 变量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vue响应式原理.html" class="navigation navigation-next " aria-label="Next page: vue响应式原理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"vue事件机制","level":"1.5.3","depth":2,"next":{"title":"vue响应式原理","level":"1.5.4","depth":2,"path":"Vue & React/vue响应式原理.md","ref":"Vue & React/vue响应式原理.md","articles":[]},"previous":{"title":"vue 引入 sass 变量","level":"1.5.2","depth":2,"path":"Vue & React/vue 引入 sass 变量.md","ref":"Vue & React/vue 引入 sass 变量.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"ignores":["_book","docs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"sortedBy":"-","variables":{},"title":"前端","catalog":"all","gitbook":"*","outputfile":"SUMMARY.md"},"file":{"path":"Vue & React/vue事件机制.md","mtime":"2020-02-16T12:22:59.824Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2020-02-16T13:56:07.452Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1104 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>vue响应式原理 · 前端</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="vue事件机制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../1-基础/Promise.html">
+            
+                <a href="../1-基础/Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../1-基础/代码简洁之道.html">
+            
+                <a href="../1-基础/代码简洁之道.html">
+            
+                    
+                    代码简洁之道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../1-基础/去重.html">
+            
+                <a href="../1-基础/去重.html">
+            
+                    
+                    去重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../1-基础/日期.html">
+            
+                <a href="../1-基础/日期.html">
+            
+                    
+                    日期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../1-基础/类型检测.html">
+            
+                <a href="../1-基础/类型检测.html">
+            
+                    
+                    类型检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../1-基础/颜色的转换.html">
+            
+                <a href="../1-基础/颜色的转换.html">
+            
+                    
+                    颜色的转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    css相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../css相关/css常用.html">
+            
+                <a href="../css相关/css常用.html">
+            
+                    
+                    css常用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../css相关/rem.html">
+            
+                <a href="../css相关/rem.html">
+            
+                    
+                    Rem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../css相关/动效.html">
+            
+                <a href="../css相关/动效.html">
+            
+                    
+                    动效
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../css相关/多行省略展开收起.html">
+            
+                <a href="../css相关/多行省略展开收起.html">
+            
+                    
+                    多行省略展开收起
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Node
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../node/Nodejs 线程和锁.html">
+            
+                <a href="../node/Nodejs 线程和锁.html">
+            
+                    
+                    Nodejs 线程和锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../node/node异步流程控制.html">
+            
+                <a href="../node/node异步流程控制.html">
+            
+                    
+                    node异步流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Vue React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="immer.html">
+            
+                <a href="immer.html">
+            
+                    
+                    Immer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="vue 引入 sass 变量.html">
+            
+                <a href="vue 引入 sass 变量.html">
+            
+                    
+                    vue 引入 sass 变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="vue事件机制.html">
+            
+                <a href="vue事件机制.html">
+            
+                    
+                    vue事件机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="vue响应式原理.html">
+            
+                <a href="vue响应式原理.html">
+            
+                    
+                    vue响应式原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    填坑
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../填坑/vue小程序互转.html">
+            
+                <a href="../填坑/vue小程序互转.html">
+            
+                    
+                    vue小程序互转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../填坑/前端监控.html">
+            
+                <a href="../填坑/前端监控.html">
+            
+                    
+                    前端监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../填坑/可视化搭建.html">
+            
+                <a href="../填坑/可视化搭建.html">
+            
+                    
+                    可视化搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../填坑/移动端场景.html">
+            
+                <a href="../填坑/移动端场景.html">
+            
+                    
+                    移动端场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    小程序相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../小程序相关/小程序性能以及原理.html">
+            
+                <a href="../小程序相关/小程序性能以及原理.html">
+            
+                    
+                    小程序性能以及原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../工具/charles设置代理.html">
+            
+                <a href="../工具/charles设置代理.html">
+            
+                    
+                    charles设置代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../工具/crontab定时任务.html">
+            
+                <a href="../工具/crontab定时任务.html">
+            
+                    
+                    crontab定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../工具/git 常用命令.html">
+            
+                <a href="../工具/git 常用命令.html">
+            
+                    
+                    git 常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../工具/mac相关.html">
+            
+                <a href="../工具/mac相关.html">
+            
+                    
+                    mac相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../工具/mysql.html">
+            
+                <a href="../工具/mysql.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../工具/npm常用命令.html">
+            
+                <a href="../工具/npm常用命令.html">
+            
+                    
+                    npm常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../工具/Typescript.html">
+            
+                <a href="../工具/Typescript.html">
+            
+                    
+                    Typescript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../工具/端口冲突.html">
+            
+                <a href="../工具/端口冲突.html">
+            
+                    
+                    端口冲突
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    网络&性能
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../网络&性能/URL链接过长.html">
+            
+                <a href="../网络&性能/URL链接过长.html">
+            
+                    
+                    URL链接过长
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../网络&性能/当说到性能和渲染.html">
+            
+                <a href="../网络&性能/当说到性能和渲染.html">
+            
+                    
+                    当说到性能和渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../网络&性能/网络安全.html">
+            
+                <a href="../网络&性能/网络安全.html">
+            
+                    
+                    网络安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../网络&性能/资源加载顺序以及预加载.html">
+            
+                <a href="../网络&性能/资源加载顺序以及预加载.html">
+            
+                    
+                    资源加载顺序以及预加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../网络&性能/静态资源版本更新与缓存.html">
+            
+                <a href="../网络&性能/静态资源版本更新与缓存.html">
+            
+                    
+                    静态资源版本更新与缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    随笔
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../随笔/春招回忆录.html">
+            
+                <a href="../随笔/春招回忆录.html">
+            
+                    
+                    春招回忆录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../随笔/杭州 NodeParty 第五期.html">
+            
+                <a href="../随笔/杭州 NodeParty 第五期.html">
+            
+                    
+                    杭州 NodeParty 第五期
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >vue响应式原理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="vue&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;">vue&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;</h2>
+<h3 id="&#x6982;&#x62EC;&#x6765;&#x8BF4;">&#x6982;&#x62EC;&#x6765;&#x8BF4;</h3>
+<ul>
+<li>&#x628A;&#x6570;&#x636E;&#x653E;&#x5230;vue&#x7684;data&#x540E;&#xFF0C;&#x6570;&#x636E;&#x589E;&#x52A0;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;<strong>ob</strong>&#x3001;getter()&#x3001;setter()</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x9636;&#x6BB5;&#xFF0C;&#x89E3;&#x6790;html&#xFF0C;&#x627E;&#x51FA;&#x5176;&#x4E2D;&#x7684;directive(&#x5982;v-model)&#xFF0C;&#x4EE5;&#x53CA;&#x5176;&#x5173;&#x8054;&#x7684;&#x6570;&#x636E;&#x3002;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;directive1&#x5B9E;&#x4F8B;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Observer1&#x5BF9;&#x8C61;&#xFF0C;data1.<strong>ob</strong>&#x5C31;&#x6307;&#x5411;Observer1</li>
+<li>Observer1&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027; -&gt; &#x6307;&#x5411;&#x5F53;&#x524D;&#x7684;Dep&#x5BF9;&#x8C61;&#xFF08;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#xFF09;</li>
+<li>&#x5F53;&#x8C03;data.setter()&#xFF0C;&#x89E6;&#x53D1;Dep.depend(),&#x6536;&#x96C6;&#x4F9D;&#x8D56;&#xFF08;&#x5C06;watcher1&#x6DFB;&#x52A0;&#x5230;Dep&#x7684;watchers&#x6570;&#x7EC4;&#x4E2D;&#xFF09;</li>
+<li>Dep&#x5BF9;&#x8C61;&#x6709;depend()+notify()&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;target&#xFF1A;Watchers[watcher1(&#x5173;&#x8054;&#x7740;directive1),watcher2]</li>
+<li>&#x5F53;&#x8C03;data1.getter(),&#x89E6;&#x53D1;notify(),&#x7136;&#x540E;&#x901A;&#x77E5;Watcher1&#x5BF9;directive1-&gt;Vdom-&gt;&#x771F;&#x5B9E;dom&#x4E00;&#x8DEF;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#xFF0C;&#x8FD9;&#x91CC;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x66F4;&#x65B0;&#x961F;&#x5217;&#x3002;</li>
+</ul>
+<h3 id="&#x7EC6;&#x81F4;&#x6765;&#x8BF4;">&#x7EC6;&#x81F4;&#x6765;&#x8BF4;</h3>
+<p>vue&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;MVVM&#x6846;&#x67B6;&#xFF0C;&#x89C6;&#x56FE;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x53D8;&#x5316;&#x662F;&#x5B83;&#x7684;&#x4E00;&#x5927;&#x7279;&#x70B9;&#xFF0C;&#x90A3;&#x4E48;&#x662F;&#x65F6;&#x5019;&#x6765;&#x63A2;&#x7D22;&#x4E00;&#x4E0B;&#x5B83;&#x80CC;&#x540E;&#x7684;&#x539F;&#x7406;&#x4E86;&#xFF0C;&#x672C;&#x6587;&#x4EC5;&#x4EE3;&#x8868;&#x73B0;&#x9636;&#x6BB5;&#x4E2A;&#x4EBA;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x5982;&#x6709;&#x9519;&#x8BEF;&#x6B22;&#x8FCE;&#x6307;&#x51FA;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x5E45;&#x5F88;&#x5173;&#x952E;&#x7684;&#x56FE;&#xFF0C;&#x4E5F;&#x662F;&#x5B98;&#x7F51;&#x7ED9;&#x51FA;&#x7684;&#x56FE;&#x3002;
+<img src="assets/image-20200216202659510.png" alt="image-20200216202659510" style="zoom: 33%;"></p>
+<p>vue&#x54CD;&#x5E94;&#x5F0F;&#x6709;&#x5F88;&#x5173;&#x952E;&#x7684;&#x4E09;&#x4E2A;&#x5143;&#x7D20;Observer&#xFF0C;Watcher&#xFF0C;Directive
+&#x5176;&#x5B9E;&#x5E95;&#x4E0B;&#x8FD9;&#x4E2A;&#x56FE;&#x6709;&#x70B9;&#x4E71;&#xFF0C;&#x5927;&#x81F4;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E0B;&#xFF0C;&#x56E0;&#x4E3A;&#x5206;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x6709;&#x4E9B;&#x90E8;&#x5206;&#x4E32;&#x8D77;&#x6765;&#x4E86;&#xFF0C;&#x5177;&#x4F53;&#x8FD8;&#x662F;&#x53C2;&#x8003;&#x7740;&#x6587;&#x5B57;&#x8D70;&#x5427;&#xFF0C;&#x6211;&#x662F;&#x8FD9;&#x4E48;&#x89C9;&#x5F97;&#x7684;&#x3002;
+<img src="assets/image-20200216202724915.png" alt="image-20200216202724915" style="zoom:50%;"></p>
+<h2 id="init-&#x521D;&#x59CB;&#x5316;&#x9636;&#x6BB5;">Init &#x521D;&#x59CB;&#x5316;&#x9636;&#x6BB5;</h2>
+<h3 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h3>
+<p>&#x5F53;&#x628A;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x6570;&#x636E;&#x653E;&#x5165;vue&#x7684;data&#x4E2D;&#x540E;&#x4F1A;&#x6709;&#x5982;&#x4E0B;&#x53D8;&#x5316;</p>
+<ol>
+<li>this.a = this.$data.a &#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x76F4;&#x63A5;&#x80FD;&#x8BBF;&#x95EE;&#x5230;&#x6570;&#x636E;</li>
+<li><p>&#x901A;&#x8FC7;console.log&#x6253;&#x5370;&#x6570;&#x636E;&#xFF0C;&#x5C06;&#x4F1A;&#x53D8;&#x6210;&#x4E0B;&#x56FE;&#x7684;&#x6837;&#x5B50;&#xFF0C;&#x53D1;&#x73B0;&#x591A;&#x4E86;&#xFF1A;</p>
+</li>
+<li><p><strong>ob</strong>&#x5C5E;&#x6027;</p>
+</li>
+<li>getter&#x65B9;&#x6CD5;</li>
+<li>setter&#x65B9;&#x6CD5;</li>
+</ol>
+<p><img src="assets/image-20200216202756267.png" alt="image-20200216202756267" style="zoom:50%;"></p>
+<h3 id="&#x600E;&#x4E48;&#x505A;">&#x600E;&#x4E48;&#x505A;</h3>
+<p>&#x90A3;&#x4E48;Vue&#x90FD;&#x505A;&#x4E86;&#x4E9B;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x8BF7;&#x5F80;&#x4E0B;&#x770B;</p>
+<p>src/core/instance/state.js</p>
+<blockquote>
+<p>initState</p>
+<blockquote>
+<p>initProps
+initMethods
+initData ( &#x91CD;&#x70B9; )
+initComputed
+initWatch </p>
+</blockquote>
+</blockquote>
+<p>initData &#x65B9;&#x6CD5;</p>
+<blockquote>
+<p>initData</p>
+<blockquote>
+<p>proxy()   // &#x5B9E;&#x73B0;&#x7B2C;&#x4E00;&#x9879;&#x76EE;&#x6807;
+observe()</p>
+</blockquote>
+</blockquote>
+<h5 id="proxy&#x65B9;&#x6CD5;&#xFF1A;">proxy&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<p> &#x904D;&#x5386;data&#x7684;key&#xFF0C;&#x901A;&#x8FC7;(es5)Object.defineProperty&#x7684;getter&#x548C;setter&#x65B9;&#x6CD5;&#x5C06;&#x5176;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x4EE3;&#x7406;&#x5230;vm&#x5B9E;&#x4F8B;&#x4E0A;</p>
+<h5 id="observe&#x65B9;&#x6CD5;&#xFF1A;">observe&#x65B9;&#x6CD5;&#xFF1A;</h5>
+<ol>
+<li>&#x68C0;&#x6D4B;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x4E86;<strong>ob</strong>&#x5C5E;&#x6027;</li>
+<li>&#x68C0;&#x6D4B;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;</li>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Observer&#x5BF9;&#x8C61;</li>
+<li>&#x5C06;Observer&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027; <strong>ob</strong>:Oberver</li>
+</ol>
+<h5 id="observer&#x7C7B;">Observer&#x7C7B;</h5>
+<blockquote>
+<p>walk()             // &#x5982;&#x679C;&#x5C5E;&#x6027;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x8BA9;&#x5B83;&#x62E5;&#x6709;getter&#x548C;setter&#x65B9;&#x6CD5;
+Dep&#x5BF9;&#x8C61;            // &#x7B80;&#x5355;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;</p>
+<blockquote>
+<p>target           // &#x5F00;&#x59CB;&#x4E3A;null&#xFF0C;&#xFF08;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#xFF09;&#x6307;&#x5411;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x7684;Watcher&#x5B9E;&#x4F8B;
+depend()         // collect dependencies (&#x6536;&#x96C6;&#x4F9D;&#x8D56;) &#x2014;&#x2014;getter&#x65B9;&#x6CD5;&#x4F1A;&#x89E6;&#x53D1;
+notify()         // dispatch updates (&#x901A;&#x77E5;&#x66F4;&#x65B0;) &#x2014;&#x2014;setter&#x65B9;&#x6CD5;&#x4F1A;&#x89E6;&#x53D1;</p>
+</blockquote>
+</blockquote>
+<h2 id="complier-&#x7F16;&#x8BD1;&#x9636;&#x6BB5;">Complier &#x7F16;&#x8BD1;&#x9636;&#x6BB5;</h2>
+<h3 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h3>
+<p>&#x5EFA;&#x7ACB;Watcher&#x548C;Directive&#x548C;Observer&#x7684;&#x8054;&#x7CFB;</p>
+<ul>
+<li>Observer&#x7684;Dep&#x5EFA;&#x7ACB;watcher&#x961F;&#x5217;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x65F6;&#x53BB;&#x901A;&#x77E5;&#x8FD9;&#x4E9B;watcher</li>
+<li>&#x540C;&#x65F6;&#x6BCF;&#x4E2A;watcher&#x53C8;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;directive&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x4E86;</li>
+<li>&#x5B98;&#x7F51;&#x4E0A;&#x6709;&#x8FD9;&#x4E48;&#x4E00;&#x6BB5;&#x8BDD;&#xFF0C;&#x4F46;&#x6211;&#x901A;&#x8FC7;&#x6E90;&#x7801;&#x7684;&#x7406;&#x89E3;&#x662F;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x6709;&#x5F88;&#x591A;&#x7684;directive&#xFF0C;&#x6BCF;&#x4E2A;directive&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;watcher&#xFF0C;&#x540C;&#x65F6;&#x8FD9;&#x4E2A;watcher&#x662F;&#x5728;&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x7684;watchers&#x6570;&#x7EC4;&#x4E2D;&#x7684;<blockquote>
+<p>&#x6BCF;&#x4E2A;&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x90FD;&#x6709;&#x76F8;&#x5E94;&#x7684; watcher &#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x628A;&#x5C5E;&#x6027;&#x8BB0;&#x5F55;&#x4E3A;&#x4F9D;&#x8D56;&#xFF0C;&#x4E4B;&#x540E;&#x5F53;&#x4F9D;&#x8D56;&#x9879;&#x7684; setter &#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x4F1A;&#x901A;&#x77E5; watcher &#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#xFF0C;&#x4ECE;&#x800C;&#x81F4;&#x4F7F;&#x5B83;&#x5173;&#x8054;&#x7684;&#x7EC4;&#x4EF6;&#x5F97;&#x4EE5;&#x66F4;&#x65B0;&#x3002;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="&#x600E;&#x4E48;&#x505A;">&#x600E;&#x4E48;&#x505A;</h3>
+<ol>
+<li>vm.complier()&#x5C06;template&#x8F6C;&#x6362;&#x4E3A;document.fragment(&#x62FF;&#x5230;el&#x5BF9;&#x8C61;)</li>
+<li>&#x89E3;&#x6790;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x6307;&#x4EE4;(&#x89E3;&#x6790;&#x5668;Parser)<ul>
+<li>&#x6307;&#x4EE4;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x6570;&#x636E; this.a</li>
+<li>&#x6307;&#x4EE4;&#x7684;&#x66F4;&#x65B0;&#x65B9;&#x5F0F; </li>
+</ul>
+</li>
+<li>&#x521B;&#x5EFA;Directive&#x5B9E;&#x4F8B;&#xFF0C;&#x5C06;&#x5176;&#x6DFB;&#x52A0;&#x5230;directive&#x6570;&#x7EC4;&#x4E2D;</li>
+<li>&#x4E3A;Directive&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;Watcher(expOrFn,callback)&#xFF0C;&#x5C06;&#x5176;push&#x5230;&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x7684;watchers&#x4E2D;<pre><code class="lang-js"><span class="hljs-keyword">this</span>.vm = vm
+vm._watchers.push(<span class="hljs-keyword">this</span>)
+</code></pre>
+</li>
+<li>&#x5411;Watcher&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F20;&#x5165;&#x6307;&#x4EE4;&#x7684;expression(String),&#x4F8B;&#x5982;&quot;a&quot;<pre><code class="lang-js"><span class="hljs-comment">// &#x628A; expression &#x8F6C;&#x5316;&#x4E3A; getter()  </span>
+<span class="hljs-comment">//&#x8FD9;&#x91CC;&#x4E0D;&#x662F;&#x5F88;&#x7406;&#x89E3; expression &#x548C; expOrFn&#x7684;&#x5173;&#x7CFB;</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> expOrFn === <span class="hljs-string">&apos;function&apos;</span>) {
+<span class="hljs-keyword">this</span>.getter = expOrFn  <span class="hljs-comment">//&#x5982;&#x679C;&#x662F;&#x51FD;&#x6570;&#x90A3;&#x4E48;&#x76F4;&#x63A5;&#x8D4B;&#x503C;</span>
+} <span class="hljs-keyword">else</span> {
+<span class="hljs-keyword">this</span>.getter = parsePath(expOrFn)  <span class="hljs-comment">//&#x4E0D;&#x7136;&#x7684;&#x8BDD;&#x8F6C;&#x6362;&#x4E00;&#x4E0B;</span>
+<span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.getter) {
+ <span class="hljs-keyword">this</span>.getter = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{}
+ process.env.NODE_ENV !== <span class="hljs-string">&apos;production&apos;</span> &amp;&amp; warn(
+   <span class="hljs-string">`Failed watching path: &quot;<span class="hljs-subst">${expOrFn}</span>&quot; `</span> +
+   <span class="hljs-string">&apos;Watcher only accepts simple dot-delimited paths. &apos;</span> +
+   <span class="hljs-string">&apos;For full control, use a function instead.&apos;</span>,
+   vm
+ )
+}
+}
+</code></pre>
+</li>
+<li>Watcher &#x7684;get()&#x8C03;&#x7528;pushTarget(): &#x5C06;Dep.target&#x6307;&#x5411;&#x5F53;&#x524D;Watcher&#x5B9E;&#x4F8B;</li>
+<li>Watcher &#x7684;get()&#x8C03;&#x7528; this.getter.call(vm, vm)&#xFF0C;&#x89E6;&#x53D1;&#x6B64;Watcher&#x4F9D;&#x8D56;&#x9879;&#x5C5E;&#x6027;&#x7684;getter&#xFF0C;&#x8C03;&#x7528;&#x5176;dep.depend()&#x91CD;&#x65B0;&#x6536;&#x96C6;&#x4F9D;&#x8D56;&#xFF0C;&#x5176;&#x5B9E;&#x4E5F;&#x5C31;&#x662F;&#x628A;&#x8BE5;watcher&#x6DFB;&#x52A0;&#x5230;&#x6240;&#x6709;&#x4F9D;&#x8D56;&#x9879;dep&#x5BF9;&#x8C61;&#x7684;watcher&#x961F;&#x5217;&#x4E2D;&#xFF0C;
+&#x7136;&#x540E;&#x628A;&#x5176;dep&#x6DFB;&#x52A0;&#x5230;&#x5F53;&#x524D;watcher&#x7684;deps&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x65F6;&#x5C31;&#x4F1A;&#x8C03;&#x7528;dep&#x7684;notify&#x6765;&#x901A;&#x77E5;&#x5176;&#x5173;&#x8054;watcher(&#x4E5F;&#x5C31;&#x662F;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x6240;&#x6709;watcher),&#x6765;&#x8BA9;&#x5B83;&#x4EEC;&#x90FD;&#x8C03;&#x7528;update&#x66F4;&#x65B0;</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-comment">// Watcher&#x7684;get()&#x65B9;&#x6CD5;</span>
+  get () {
+    pushTarget(<span class="hljs-keyword">this</span>)    <span class="hljs-comment">//&#x5C06;Dep.target&#x6307;&#x5411;&#x5F53;&#x524D;Watcher&#x5B9E;&#x4F8B;</span>
+    <span class="hljs-keyword">let</span> value
+    <span class="hljs-keyword">const</span> vm = <span class="hljs-keyword">this</span>.vm
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.user) {
+      <span class="hljs-keyword">try</span> {
+        value = <span class="hljs-keyword">this</span>.getter.call(vm, vm)
+      } <span class="hljs-keyword">catch</span> (e) {
+        handleError(e, vm, <span class="hljs-string">`getter for watcher &quot;<span class="hljs-subst">${this.expression}</span>&quot;`</span>)
+      }
+    } <span class="hljs-keyword">else</span> {
+      value = <span class="hljs-keyword">this</span>.getter.call(vm, vm)  <span class="hljs-comment">// &#x89E6;&#x53D1;&#x5B9E;&#x4F8B;data&#x4E0A;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x7684;getter&#x91CD;&#x65B0;&#x6536;&#x96C6;&#x4F9D;&#x8D56;</span>
+    }
+    <span class="hljs-comment">// &quot;touch&quot; every property so they are all tracked as</span>
+    <span class="hljs-comment">// dependencies for deep watching</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.deep) {
+      traverse(value)
+    }
+    popTarget()    <span class="hljs-comment">// &#x4F9D;&#x8D56;&#x6536;&#x96C6;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x518D;&#x8C03;&#x7528;Dep.popTarget()&#xFF0C;&#x8BA9;dep&#x7684;target=null</span>
+    <span class="hljs-keyword">this</span>.cleanupDeps()
+    <span class="hljs-keyword">return</span> value
+  }
+</code></pre>
+<p>&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7684; Watcher &#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;Dep.target&#x7684;&#x6307;&#x5411;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Dep &#x7684; pushTarget() &#x548C; popTarget ()</span>
+Dep.target = <span class="hljs-literal">null</span>
+<span class="hljs-keyword">const</span> targetStack = []
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushTarget</span> (<span class="hljs-params">_target: Watcher</span>) </span>{
+  <span class="hljs-keyword">if</span> (Dep.target) targetStack.push(Dep.target)
+  Dep.target = _target
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">popTarget</span> (<span class="hljs-params"></span>) </span>{
+  Dep.target = targetStack.pop()
+}
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">//Dep&#x7C7B;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dep</span> </span>{
+  <span class="hljs-keyword">static</span> target: ?Watcher;
+  id: number;
+  subs: <span class="hljs-built_in">Array</span>&lt;Watcher&gt;;  <span class="hljs-comment">// Watcher&#x961F;&#x5217;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x8C03;&#x7528;&#x5C5E;&#x6027;&#x7684;setter&#x89E6;&#x53D1;&#x5176;Dep.depend()</span>
+  depend () {
+    <span class="hljs-keyword">if</span> (Dep.target) {
+      Dep.target.addDep(<span class="hljs-keyword">this</span>)  <span class="hljs-comment">// &#x4E3A;&#x5F53;&#x524D;Watcher&#x5B9E;&#x4F8B;&#x6DFB;&#x52A0;&#x8FD9;&#x4E2A;Dep</span>
+    }
+  }
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// Watcher&#x7684;addDep()&#x65B9;&#x6CD5;</span>
+<span class="hljs-comment">// Add a dependency to this directive.</span>
+
+  addDep (dep: Dep) {
+    <span class="hljs-keyword">const</span> id = dep.id
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.newDepIds.has(id)) {
+      <span class="hljs-keyword">this</span>.newDepIds.add(id)
+      <span class="hljs-keyword">this</span>.newDeps.push(dep)
+      <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.depIds.has(id)) {
+        dep.addSub(<span class="hljs-keyword">this</span>)  <span class="hljs-comment">//&#x8C03;&#x7528;Dep &#x7684;addSub()&#xFF0C;&#x5C06;&#x6B64;Watcher&#x6DFB;&#x52A0;&#x5230;&#x8FD9;&#x4E2A;dep&#x7684;watcher&#x961F;&#x5217;&#x4E2D;</span>
+      }
+    }
+  }
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// Dep &#x7684;addSub()</span>
+addSub (sub: Watcher) {
+    <span class="hljs-keyword">this</span>.subs.push(sub)
+  }
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// Dep&#x7684;notify()</span>
+  notify () {
+    <span class="hljs-comment">// stabilize the subscriber list first</span>
+    <span class="hljs-keyword">const</span> subs = <span class="hljs-keyword">this</span>.subs.slice()
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>, l = subs.length; i &lt; l; i++) {
+      subs[i].update()    <span class="hljs-comment">//&#x901A;&#x77E5;Watcher&#x961F;&#x5217;&#x7684;&#x6240;&#x6709;watcher&#x53BB;&#x8C03;&#x7528;update()</span>
+    }
+  }
+}
+</code></pre>
+<h2 id="&#x6570;&#x636E;&#x66F4;&#x65B0;">&#x6570;&#x636E;&#x66F4;&#x65B0;</h2>
+<ul>
+<li>&#x901A;&#x8FC7; setter()&#x66F4;&#x65B0;&#x6570;&#x636E;</li>
+<li>&#x89E6;&#x53D1; Dep.notify()</li>
+<li>&#x8C03;&#x7528; Watcher &#x5B9E;&#x4F8B;&#x7684; update()<ul>
+<li>&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#xFF0C;&#x8C03;&#x7528; Watcher &#x5B9E;&#x4F8B;&#x7684; run() &#x66F4;&#x65B0; DOM</li>
+<li>&#x5982;&#x679C;&#x540C;&#x4E00;&#x4E2A; Watcher &#x88AB;&#x591A;&#x6B21;&#x89E6;&#x53D1;&#xFF0C;&#x4E3A;&#x4E86;&#x51CF;&#x5C11; DOM &#x64CD;&#x4F5C;
+&#x4F1A;&#x5C06; Watcher &#x5B9E;&#x4F8B; push &#x5230;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x66F4;&#x65B0;&#x961F;&#x5217;&#x4E2D; </li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-js"> update () {
+    <span class="hljs-comment">/* istanbul ignore else */</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.lazy) {
+      <span class="hljs-keyword">this</span>.dirty = <span class="hljs-literal">true</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.sync) {
+      <span class="hljs-keyword">this</span>.run()
+    } <span class="hljs-keyword">else</span> {
+      queueWatcher(<span class="hljs-keyword">this</span>)
+    }
+  }
+</code></pre>
+<h2 id="virtural-dom">Virtural DOM</h2>
+<p>Vue2.0 &#x5F15;&#x5165;&#x4E86;&#x5F88;&#x591A;&#x7279;&#x6027;</p>
+<blockquote>
+<p>&#x8F7B;&#x91CF; &#x4F53;&#x79EF;&#x5C0F; runtime-only &#x538B;&#x7F29;&#x540E;&#x53EA;&#x6709;16kb
+&#x652F;&#x6301;&#x670D;&#x52A1;&#x5668;&#x6D41;&#x5F0F;&#x6E32;&#x67D3;
+&#x7528; VirtualDOM &#x5BF9;&#x6E32;&#x67D3;&#x5C42;&#x8FDB;&#x884C;&#x4E86;&#x91CD;&#x5199;</p>
+</blockquote>
+<h3 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h3>
+<p>&#x4E0D;&#x5F53;&#x7684; DOM &#x64CD;&#x4F5C;&#x5F88;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x6D4F;&#x89C8;&#x5668;&#x91CD;&#x6392;&#xFF0C;&#x5BF9;&#x6027;&#x80FD;&#x6765;&#x8BF4;&#x662F;&#x4E00;&#x5927;&#x6740;&#x624B;</p>
+<h3 id="&#x65B9;&#x5F0F;">&#x65B9;&#x5F0F;</h3>
+<p>Virtual DOM &#x662F;&#x5728;js&#x64CD;&#x4F5C;&#x548C;DOM&#x64CD;&#x4F5C;&#x4E4B;&#x95F4;&#x7684;&#x4E00;&#x4E2A;&#x4E2D;&#x4ECB;&#xFF0C;&#x5C31;&#x597D;&#x6BD4;&#x5185;&#x5B58;&#x4E4B;&#x4E8E;CPU&#x548C;&#x786C;&#x76D8;</p>
+<h3 id="&#x6B65;&#x9AA4;">&#x6B65;&#x9AA4;</h3>
+<ol>
+<li>&#x7528;js&#x5BF9;&#x8C61;&#x6A21;&#x62DF;&#x4E00;&#x68F5;DOM&#x6811; (&#x8282;&#x70B9;&#x7C7B;&#x578B; &#x5C5E;&#x6027; &#x5B50;&#x8282;&#x70B9;)</li>
+<li>&#x57FA;&#x4E8E;&#x72B6;&#x6001;&#x53D8;&#x5316;&#xFF0C;&#x751F;&#x6210;&#x53E6;&#x4E00;&#x68F5;&#x53D8;&#x5316;&#x540E;&#x7684;&#x6811;</li>
+<li>&#x6BD4;&#x8F83;&#x4E24;&#x68F5;&#x865A;&#x62DF;DOM&#x6811;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02; </li>
+<li>&#x627E;&#x51FA;&#x4ECE;&#x4E00;&#x68F5;&#x6811;&#x5230;&#x53E6;&#x4E00;&#x68F5;&#x6811;&#x53D8;&#x5316;&#x7684;&#x6700;&#x5C0F;&#x6B65;&#x9AA4;(diff&#x7B97;&#x6CD5;)</li>
+<li>&#x628A;&#x5DEE;&#x5F02;&#x90E8;&#x5206;&#x5E94;&#x7528;&#x5230;&#x771F;&#x6B63;&#x7684;DOM&#x4E0A;</li>
+</ol>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;">&#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+<ul>
+<li><a href="http://jiongks.name/blog/vue-code-review/" _target="blank">&#x56E7;&#x514B;&#x65AF;Vue&#x6E90;&#x7801;&#x5B66;&#x4E60;&#x7B14;&#x8BB0;</a></li>
+<li><a href="http://www.imooc.com/article/14466" _target="blank">&#x6155;&#x8BFE;&#x624B;&#x8BB0;&#x2014;&#x2014;Vue &#x6E90;&#x7801;&#x89E3;&#x6790;&#xFF1A;&#x6DF1;&#x5165;&#x54CD;&#x5E94;&#x5F0F;&#x539F;&#x7406;</a></li>
+<li><a href="https://www.zhihu.com/question/29504639" _target="blank">&#x77E5;&#x4E4E;&#x56DE;&#x7B54;&#x2014;&#x2014;&#x600E;&#x4E48;&#x66F4;&#x597D;&#x7684;&#x7406;&#x89E3;&#x865A;&#x62DF;DOM</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vue事件机制.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: vue事件机制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"vue响应式原理","level":"1.5.4","depth":2,"next":{"title":"填坑","level":"1.6","depth":1,"ref":"","articles":[{"title":"vue小程序互转","level":"1.6.1","depth":2,"path":"填坑/vue小程序互转.md","ref":"填坑/vue小程序互转.md","articles":[]},{"title":"前端监控","level":"1.6.2","depth":2,"path":"填坑/前端监控.md","ref":"填坑/前端监控.md","articles":[]},{"title":"可视化搭建","level":"1.6.3","depth":2,"path":"填坑/可视化搭建.md","ref":"填坑/可视化搭建.md","articles":[]},{"title":"移动端场景","level":"1.6.4","depth":2,"path":"填坑/移动端场景.md","ref":"填坑/移动端场景.md","articles":[]}]},"previous":{"title":"vue事件机制","level":"1.5.3","depth":2,"path":"Vue & React/vue事件机制.md","ref":"Vue & React/vue事件机制.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"ignores":["_book","docs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"sortedBy":"-","variables":{},"title":"前端","catalog":"all","gitbook":"*","outputfile":"SUMMARY.md"},"file":{"path":"Vue & React/vue响应式原理.md","mtime":"2020-02-16T12:28:08.235Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2020-02-16T13:56:07.452Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
