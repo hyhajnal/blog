@@ -1,6 +1,6 @@
 # 前端填坑系列
 
-详情请戳 👉 http://hyhajnal.github.io/blog
+
 
 * [前端精读 dt-fe/weekly](https://github.com/dt-fe/weekly)
 * [JerryQu 的小站](https://imququ.com/)
@@ -18,18 +18,31 @@
 * [rem适配](https://www.yuque.com/docs/share/f00e1bdd-7292-4177-9171-56542b37706f)
 * [移动端样式/1px](https://www.yuque.com/docs/share/4766de8c-b6f3-44af-9ad5-f272c424d370)
 
-## Webpack
+## 框架
+### Webpack
 * [HMR热更新原理](https://www.yuque.com/docs/share/f4d52885-753c-4022-9358-32941ad37c0f)
 
-## Vue
-* [Vue响应式原理]
+### Babel
+
+### Vue
+* Vue响应式原理
 
 ## 网络
 * [HTTP/TCP](https://www.yuque.com/docs/share/755d59fb-b811-4ec5-81fb-cca6a1cc5ef0)
 * [HTTPS](https://www.yuque.com/docs/share/131449a8-3979-418d-98f0-192210778590)
 * [HTTP1.1 / HTTP2 / HTTP3 分别做了哪些优化](https://www.yuque.com/docs/share/168f0d19-04df-4a88-a932-8218ff6820c7)
+* [浏览器缓存](https://www.yuque.com/docs/share/44218d25-6756-46bd-9872-9c0a19ef5573)
+
+## 工程化
+* 多端研发体系
+* 组件库
+* JS Bridge
+
+## 工作日常
+* 虚拟列表
+* 更简单的埋点
 
 
-## 其他
-* [虚拟列表]
-
+## 思考
+* 如何进行项目重构 / 项目的可持续维护
+* 前端 PM 的那些事儿
