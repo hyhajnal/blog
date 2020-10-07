@@ -4,6 +4,7 @@
 
 * [前端精读 dt-fe/weekly](https://github.com/dt-fe/weekly)
 * [JerryQu 的小站](https://imququ.com/)
+* [被删的游乐场](https://godbasin.github.io/front-end-playground/front-end-basic/)
 
 
 ## JS基础
@@ -32,15 +33,18 @@
 * [HTTPS](https://www.yuque.com/docs/share/131449a8-3979-418d-98f0-192210778590)
 * [HTTP1.1 / HTTP2 / HTTP3 分别做了哪些优化](https://www.yuque.com/docs/share/168f0d19-04df-4a88-a932-8218ff6820c7)
 * [浏览器缓存](https://www.yuque.com/docs/share/44218d25-6756-46bd-9872-9c0a19ef5573)
+* [从输入URL到页面展示](https://www.yuque.com/docs/share/d0c111e0-0b65-4b8a-9c4c-984f94d0b5c3)
 
 ## 工程化
 * 多端研发体系
 * 组件库
 * JS Bridge
+* 前端路由
 
 ## 工作日常
 * 虚拟列表
 * 更简单的埋点
+* 本地删除与滚动条定位
 
 
 ## 思考
