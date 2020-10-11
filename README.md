@@ -24,9 +24,13 @@
 * [HMR热更新原理](https://www.yuque.com/docs/share/f4d52885-753c-4022-9358-32941ad37c0f)
 
 ### Babel
+* [编写一个简单的Babel插件]（https://www.yuque.com/docs/share/604fd54e-d87e-4c0b-90ac-00e6b35c0a92）
 
 ### Vue
 * Vue响应式原理
+* Vue-Router原理
+* Vuex原理
+* Vue3.0
 
 ## 网络
 * [HTTP/TCP](https://www.yuque.com/docs/share/755d59fb-b811-4ec5-81fb-cca6a1cc5ef0)
@@ -41,6 +45,7 @@
 * JS Bridge
 * 前端路由
 * [使用 psd.js 解析 psd](https://www.yuque.com/docs/share/46d740d1-e8f5-4db2-a1da-d032677b5b73)
+* [使用 sketch插件 解析 sketch](https://www.yuque.com/docs/share/5b2c8ad5-1109-44fd-a726-73b65850dc79)
 
 ## 工作日常
 * 虚拟列表
