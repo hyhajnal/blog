@@ -1,7 +1,5 @@
 # 前端填坑系列
 
-
-
 * [前端精读 dt-fe/weekly](https://github.com/dt-fe/weekly)
 * [JerryQu 的小站](https://imququ.com/)
 * [被删的游乐场](https://godbasin.github.io/front-end-playground/front-end-basic/)
@@ -20,6 +18,7 @@
 ## CSS基础
 * [rem适配](https://www.yuque.com/docs/share/f00e1bdd-7292-4177-9171-56542b37706f)
 * [移动端样式/1px](https://www.yuque.com/docs/share/4766de8c-b6f3-44af-9ad5-f272c424d370)
+* CSS Modules
 
 ## 框架
 ### Webpack
@@ -31,7 +30,9 @@
 * [编写一个简单的Babel插件](https://www.yuque.com/docs/share/604fd54e-d87e-4c0b-90ac-00e6b35c0a92)
 
 ### Vue
-* Vue响应式原理
+* Vue 响应式原理
+* Vue/nextTick
+* Vue/keep-alive
 * Vue-Router原理
 * Vuex原理
 * Vue3.0
@@ -50,7 +51,6 @@
 * 组件库
 * 离线包
 * JS Bridge
-* 前端路由
 * [使用 psd.js 解析 psd](https://www.yuque.com/docs/share/46d740d1-e8f5-4db2-a1da-d032677b5b73)
 * [使用 sketch插件 解析 sketch](https://www.yuque.com/docs/share/5b2c8ad5-1109-44fd-a726-73b65850dc79)
 
@@ -62,4 +62,4 @@
 
 ## 思考
 * 如何进行项目重构 / 项目的可持续维护
-* 前端 PM 的那些事儿
+* 如何做一名合格的 前端PM
