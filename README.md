@@ -40,6 +40,7 @@
 * 组件库
 * JS Bridge
 * 前端路由
+* [使用 psd.js 解析 psd](https://www.yuque.com/docs/share/46d740d1-e8f5-4db2-a1da-d032677b5b73)
 
 ## 工作日常
 * 虚拟列表
