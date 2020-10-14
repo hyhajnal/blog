@@ -23,7 +23,7 @@
 ## 框架
 ### Webpack
 * [HMR热更新原理](https://www.yuque.com/docs/share/f4d52885-753c-4022-9358-32941ad37c0f)
-* webpack动态加载原理
+* pwebpack动态加载原理](https://www.yuque.com/docs/share/9b9d3459-0455-4acb-9542-c3143d0cd767)
 * Tree-shaking / Scope Hosting / Code Split
 
 ### Babel
