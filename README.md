@@ -3,6 +3,7 @@
 * [前端精读 dt-fe/weekly](https://github.com/dt-fe/weekly)
 * [JerryQu 的小站](https://imququ.com/)
 * [被删的游乐场](https://godbasin.github.io/front-end-playground/front-end-basic/)
+* [山月的琐碎博客记录](https://github.com/shfshanyue/blog)
 
 
 ## JS基础
