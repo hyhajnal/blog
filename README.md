@@ -30,9 +30,9 @@
 * [编写一个简单的Babel插件](https://www.yuque.com/docs/share/604fd54e-d87e-4c0b-90ac-00e6b35c0a92)
 
 ### Vue
-* Vue 响应式原理
-* Vue/nextTick
-* Vue/keep-alive
+* [「Vue 源码解析」响应式原理](https://www.yuque.com/docs/share/74737248-7aa3-4808-9f38-10ee5b4377a2)
+* [「Vue 源码解析」$nextTick](https://www.yuque.com/docs/share/60be609c-de82-4587-a7f9-931f6b83e24e)
+* [「Vue 源码解析」keep-alive](https://www.yuque.com/docs/share/a3af9fa3-45a7-4f9c-aa1f-8df43904c68d)
 * Vue-Router原理
 * Vuex原理
 * [Vue3.0](https://www.yuque.com/docs/share/9422c5b3-128b-4386-91a2-acbe3cef1a96)
