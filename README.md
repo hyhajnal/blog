@@ -15,6 +15,7 @@
 * [事件流/事件委托](https://www.yuque.com/docs/share/cce8f0a9-107d-4eb7-bee4-d82b7f4e0f84)
 * Promise
 * ES6/ES7/ES8新特性
+* [V8垃圾回收机制](https://www.yuque.com/docs/share/8e5bc6ec-280d-424d-bb6a-4bd433b8574b)
 
 ## CSS基础
 * [rem适配](https://www.yuque.com/docs/share/f00e1bdd-7292-4177-9171-56542b37706f)
@@ -34,9 +35,9 @@
 * [「Vue 源码解析」响应式原理](https://www.yuque.com/docs/share/74737248-7aa3-4808-9f38-10ee5b4377a2)
 * [「Vue 源码解析」$nextTick](https://www.yuque.com/docs/share/60be609c-de82-4587-a7f9-931f6b83e24e)
 * [「Vue 源码解析」keep-alive](https://www.yuque.com/docs/share/a3af9fa3-45a7-4f9c-aa1f-8df43904c68d)
-* Vue-Router原理
-* Vuex原理
-* [Vue3.0](https://www.yuque.com/docs/share/9422c5b3-128b-4386-91a2-acbe3cef1a96)
+* [ Vue-Router原理](https://www.yuque.com/docs/share/35fb22c5-252c-4775-9425-9c77f3971d12)
+* [ Vuex原理](https://www.yuque.com/docs/share/ea63d949-5072-4369-b65b-9dea88a48cfe)
+* [ Vue3.0](https://www.yuque.com/docs/share/9422c5b3-128b-4386-91a2-acbe3cef1a96)
 
 ## 网络
 * [HTTP/TCP](https://www.yuque.com/docs/share/755d59fb-b811-4ec5-81fb-cca6a1cc5ef0)
@@ -51,7 +52,7 @@
 * 多端研发体系
 * 组件库
 * 离线包
-* JS Bridge
+* [JS Bridge](https://www.yuque.com/docs/share/bf3a1605-220c-4a41-a1a7-e7bcbbf4646b)
 * [使用 psd.js 解析 psd](https://www.yuque.com/docs/share/46d740d1-e8f5-4db2-a1da-d032677b5b73)
 * [使用 sketch插件 解析 sketch](https://www.yuque.com/docs/share/5b2c8ad5-1109-44fd-a726-73b65850dc79)
 
