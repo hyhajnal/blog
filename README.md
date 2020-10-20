@@ -1,4 +1,4 @@
-# 前端填坑系列
+# 前端填坑系列 🚧
 
 * [前端精读 dt-fe/weekly](https://github.com/dt-fe/weekly)
 * [JerryQu 的小站](https://imququ.com/)
@@ -51,7 +51,7 @@
 
 ## 工程化
 * 多端研发体系
-* [组件库](https://www.yuque.com/docs/share/aa6c6e47-4e96-46ed-b164-756616afd2bf)
+* [基于Vue-Cli实现一个组件库](https://www.yuque.com/docs/share/aa6c6e47-4e96-46ed-b164-756616afd2bf)
 * [「离线缓存」localStorage / 离线包 / PWA](https://www.yuque.com/docs/share/340ca7c0-8a21-4ea0-8570-1e93df46fffb)
 * [前端性能监控](https://www.yuque.com/docs/share/5555f28b-26d1-495e-865c-a765877663fe)
 * [更简单的埋点](https://www.yuque.com/docs/share/f04cb4c2-8d81-43ab-8545-f815c7760212)
@@ -62,6 +62,7 @@
 ## 工作日常
 * [虚拟列表](https://www.yuque.com/docs/share/2e9233a6-e1ed-4913-81e3-dc598abc1349)
 * 本地删除与滚动条定位
+* [新用户指引](https://www.yuque.com/docs/share/8fca8cc8-1008-4605-9f47-706f9ea91cfc)
 
 
 ## 思考
