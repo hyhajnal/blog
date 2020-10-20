@@ -53,8 +53,7 @@
 * 多端研发体系
 * [基于Vue-Cli实现一个组件库](https://www.yuque.com/docs/share/aa6c6e47-4e96-46ed-b164-756616afd2bf)
 * [「离线缓存」localStorage / 离线包 / PWA](https://www.yuque.com/docs/share/340ca7c0-8a21-4ea0-8570-1e93df46fffb)
-* [前端性能监控](https://www.yuque.com/docs/share/5555f28b-26d1-495e-865c-a765877663fe)
-* [更简单的埋点](https://www.yuque.com/docs/share/f04cb4c2-8d81-43ab-8545-f815c7760212)
+* 「前端监控」[概览](https://www.yuque.com/docs/share/51644f9a-f035-424b-a1ac-bcd75217a6eb) / [性能监控](https://www.yuque.com/docs/share/5555f28b-26d1-495e-865c-a765877663fe) / [错误监控](https://www.yuque.com/docs/share/fdc30922-3f75-4eea-bcbf-46c0d4d823d8) / [业务埋点](https://www.yuque.com/docs/share/f04cb4c2-8d81-43ab-8545-f815c7760212)
 * [JS Bridge](https://www.yuque.com/docs/share/bf3a1605-220c-4a41-a1a7-e7bcbbf4646b)
 * [使用 psd.js 解析 psd](https://www.yuque.com/docs/share/46d740d1-e8f5-4db2-a1da-d032677b5b73)
 * [使用 sketch插件 解析 sketch](https://www.yuque.com/docs/share/5b2c8ad5-1109-44fd-a726-73b65850dc79)
@@ -70,5 +69,5 @@
 * 如何做一名合格的 前端PM
 
 ## 书单
-* 《编程之美》、《编程珠玑》
-* 《你不知道的JavaScript》、《JavaScript忍者秘籍》
+* 《编程之美》《编程珠玑》
+* 《你不知道的JavaScript》《JavaScript忍者秘籍》
