@@ -5,6 +5,7 @@
 * [被删的游乐场](https://godbasin.github.io/front-end-playground/front-end-basic/)
 * [山月的琐碎博客记录](https://github.com/shfshanyue/blog)
 * [前端进阶系列.木易杨](https://github.com/yygmind/blog)
+* [明日之事 事事难求](https://libin1991.github.io)
 
 
 ## JS基础
@@ -71,3 +72,4 @@
 ## 书单
 * 《编程之美》《编程珠玑》
 * 《你不知道的JavaScript》《JavaScript忍者秘籍》
+* [浏览器工作原理与实践 - 极客时间](https://time.geekbang.org/column/intro/216)
