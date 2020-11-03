@@ -6,6 +6,7 @@
 * [山月的琐碎博客记录](https://github.com/shfshanyue/blog)
 * [前端进阶系列.木易杨](https://github.com/yygmind/blog)
 * [明日之事 事事难求](https://libin1991.github.io)
+* [berwin Blog](https://github.com/berwin/Blog)
 
 
 ## JS基础
