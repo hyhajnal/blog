@@ -74,3 +74,4 @@
 * 《编程之美》《编程珠玑》
 * 《你不知道的JavaScript》《JavaScript忍者秘籍》
 * [浏览器工作原理与实践 - 极客时间](https://time.geekbang.org/column/intro/216)
+* [《前端开发核心知识进阶：从夯实基础到突破瓶颈》](https://item.jd.com/12985664.html)
