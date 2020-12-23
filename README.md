@@ -23,7 +23,6 @@
 ## CSS基础
 * [rem适配](https://www.yuque.com/docs/share/f00e1bdd-7292-4177-9171-56542b37706f)
 * [移动端样式/1px](https://www.yuque.com/docs/share/4766de8c-b6f3-44af-9ad5-f272c424d370)
-* CSS Modules
 
 ## 框架
 ### Webpack
@@ -52,7 +51,6 @@
 * [网络安全](https://www.yuque.com/docs/share/707e3cdd-50bd-460b-a4d7-1674a172b04f)
 
 ## 工程化
-* 多端研发体系
 * [基于Vue-Cli实现一个组件库](https://www.yuque.com/docs/share/aa6c6e47-4e96-46ed-b164-756616afd2bf)
 * [「离线缓存」localStorage / 离线包 / PWA](https://www.yuque.com/docs/share/340ca7c0-8a21-4ea0-8570-1e93df46fffb)
 * [「前端监控」性能监控 / 错误监控 / 业务埋点](https://www.yuque.com/docs/share/5555f28b-26d1-495e-865c-a765877663fe)
@@ -62,13 +60,8 @@
 
 ## 工作日常
 * [虚拟列表](https://www.yuque.com/docs/share/2e9233a6-e1ed-4913-81e3-dc598abc1349)
-* 本地删除与滚动条定位
 * [新用户指引](https://www.yuque.com/docs/share/8fca8cc8-1008-4605-9f47-706f9ea91cfc)
 
-
-## 思考
-* 如何进行项目重构 / 项目的可持续维护
-* 如何做一名合格的 前端PM
 
 ## 书单
 * 《编程之美》《编程珠玑》
