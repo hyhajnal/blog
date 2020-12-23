@@ -52,7 +52,6 @@
 
 ## 工程化
 * [基于Vue-Cli实现一个组件库](https://www.yuque.com/docs/share/aa6c6e47-4e96-46ed-b164-756616afd2bf)
-* [「离线缓存」localStorage / 离线包 / PWA](https://www.yuque.com/docs/share/340ca7c0-8a21-4ea0-8570-1e93df46fffb)
 * [「前端监控」性能监控 / 错误监控 / 业务埋点](https://www.yuque.com/docs/share/5555f28b-26d1-495e-865c-a765877663fe)
 * [JS Bridge](https://www.yuque.com/docs/share/bf3a1605-220c-4a41-a1a7-e7bcbbf4646b)
 * [使用 psd.js 解析 psd](https://www.yuque.com/docs/share/46d740d1-e8f5-4db2-a1da-d032677b5b73)
