@@ -56,10 +56,20 @@
 * [JS Bridge](https://www.yuque.com/docs/share/bf3a1605-220c-4a41-a1a7-e7bcbbf4646b)
 * [使用 psd.js 解析 psd](https://www.yuque.com/docs/share/46d740d1-e8f5-4db2-a1da-d032677b5b73)
 * [使用 sketch插件 解析 sketch](https://www.yuque.com/docs/share/5b2c8ad5-1109-44fd-a726-73b65850dc79)
+* [资源预加载](https://www.yuque.com/docs/share/76cb42e0-e477-4cae-8bf3-a99d81f58c45)
 
 ## 工作日常
 * [虚拟列表](https://www.yuque.com/docs/share/2e9233a6-e1ed-4913-81e3-dc598abc1349)
 * [新用户指引](https://www.yuque.com/docs/share/8fca8cc8-1008-4605-9f47-706f9ea91cfc)
+* [321多动效页面实现](https://www.yuque.com/docs/share/e86dbc47-f68b-46b4-8f88-35900d7525a4)
+* [UI订阅号](https://www.yuque.com/docs/share/8625f00a-cd04-4f7b-866a-2179e086bb20)
+* [移动端视频](https://www.yuque.com/docs/share/ec40ec9f-2094-49de-a07e-573abde35654)
+* [手机上传图片被旋转](https://www.yuque.com/docs/share/7fb8fe61-24b0-4946-9cd1-11e1efd0100f)
+
+
+## 工具
+* [Git常用命令](https://www.yuque.com/docs/share/10c5f989-0235-4b16-9526-72d53916f386) / [npm常用命令](https://www.yuque.com/docs/share/bc3c47e0-cf31-43a2-90ea-6e21426006d3)
+* [数据结构](https://www.yuque.com/docs/share/7e530c09-a0a2-49c8-8ee1-5e07c972fdc1) / [打一本算法小抄](https://www.yuque.com/docs/share/723d95d5-ed57-4423-8e54-3755cc1067a9)
 
 
 ## 书单
