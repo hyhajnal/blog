@@ -70,6 +70,9 @@
 ## 工具
 * [Git常用命令](https://www.yuque.com/docs/share/10c5f989-0235-4b16-9526-72d53916f386) / [npm常用命令](https://www.yuque.com/docs/share/bc3c47e0-cf31-43a2-90ea-6e21426006d3)
 * [数据结构](https://www.yuque.com/docs/share/7e530c09-a0a2-49c8-8ee1-5e07c972fdc1) / [打一本算法小抄](https://www.yuque.com/docs/share/723d95d5-ed57-4423-8e54-3755cc1067a9)
+### 代码可维护性
+* [设计模式](https://www.yuque.com/docs/share/f449158c-fb46-4b37-9aad-d946ab39d0fa)
+* [自动化测试](https://www.yuque.com/docs/share/7da25fbe-b4de-4aae-8f66-61cfa963977d)
 
 
 ## 书单
