@@ -8,6 +8,8 @@
 * [明日之事 事事难求](https://libin1991.github.io)
 * [berwin Blog](https://github.com/berwin/Blog)
 
+#### 想法💡和思考 🤔
+* [别人是野蛮生长，我是随性生长（我的魔幻2020）](https://www.yuque.com/docs/share/b7e436bf-61df-4cd3-abff-02290e022f73)
 
 ## JS基础
 * [JS数据类型/类型检测/隐式转换](https://www.yuque.com/docs/share/a9de8aff-bd85-45ac-a011-77f7fff21c64)
